@@ -1,0 +1,80 @@
+.switch {
+    top: 30px;
+    position: relative;
+    width: 500px;
+    height: 200px;
+    border-radius: 1000px;
+}
+
+.switch input {
+    appearance: none;
+    width: 300px;
+    height: 35px;
+    border-radius: 1000px;
+    background: #2E2E2E;
+    outline: none;
+}
+
+.switch input::before,
+.switch input::after {
+    z-index: 2;
+    position: absolute;
+    font-size: 13px;
+    top: 0;
+    transform: translateY(35%);
+    font-weight: normal;
+    transition: color 0.5s;
+}
+
+.switch input::before {
+    z-index: 4;
+    content: "Roboty koszące";
+    left: 130px;
+    color: #2e2e2e;
+}
+
+.switch input::after {
+    z-index: 4;
+    content: "Akcesoria";
+    right: 142px;
+    color: #eeeeee;
+}
+
+.switch input:checked {
+    background: #2E2E2E;
+}
+
+.switch label {
+    z-index: 1;
+    position: absolute;
+    height: 35px;
+    border-radius: 30px;
+    background: #FFFFFF;
+    mix-blend-mode: difference;
+}
+
+.switch input:checked+label {
+    left: 100px;
+    right: 235px;
+    background: #FFFFFF;
+    transition: left 0.5s, right 0.4s 0.2s, background 0.5s;
+}
+
+.switch input:not(:checked) {
+    transition: none;
+}
+
+.switch input:not(:checked)::before {
+    color: #eeeeee;
+}
+
+.switch input:not(:checked)::after {
+    color: #2E2E2E;
+}
+
+.switch input:not(:checked) + label {
+    left: 255px;
+    right: 100px;
+    background: #EEEEEE;
+    transition: left 0.4s 0.2s, right 0.5s;
+}

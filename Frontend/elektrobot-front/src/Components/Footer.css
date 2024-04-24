@@ -1,0 +1,130 @@
+.logo {
+  width: 5vw;
+  display: flex;
+  align-self: center;
+}
+.footerBody {
+  background: rgba(20, 20, 20, 1);
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+
+}
+.linkContainer {
+  display: flex;
+  gap: 2vw;
+}
+.link {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1vw;
+  font-weight: 20;
+  cursor: pointer;
+}
+.bottomSection {
+  display: flex;
+  justify-content: space-between;
+  width: 75vw;
+}
+.upperSection {
+  display: flex;
+  justify-content: space-between;
+  width: 75vw;
+}
+.middleLine {
+  width: 75vw;
+  background: white;
+  height: 0.2vh;
+}
+.contact {
+  color: rgba(171, 171, 171, 0.691);
+  font-size: 0.8vw;
+  font-weight: 20;
+  text-align: start;
+  font-weight: 600;
+}
+.arrow {
+  width: 2.5vw;
+  cursor: pointer;
+}
+.contactField {
+  display: flex;
+  align-items: center;
+  gap: 15vw;
+  padding: 0.5vw;
+  padding-left: 0.8vw;
+  padding-right: 0.8vw;
+  border-style: solid;
+  border-color: white;
+  border-radius: 5rem;
+  border-width: 1px;
+  
+}
+.fieldText {
+  color: white;
+  font-size: 1vw;
+
+}
+
+@media screen and (max-width: 767px) {
+  /* .middleLine {
+    display: none;
+  }
+  .contact{
+    font-size: 2vw;
+  }
+  .link{
+    font-size: 2vw;
+  }
+  .footerBody{
+    height: 30vh;
+  }
+  .bottomSection{
+    justify-content: space-around;
+  }
+  .upperSection{
+    justify-content: space-around !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .linkContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactField{
+    width: 20vw;
+    height: 6vw;
+    justify-content: space-between;
+  }
+  .fieldText{
+    font-size: 2vw;
+    font-weight: 20;
+  }
+  .logo{
+    width: 8vw;
+  } */
+
+  .footerBody{
+    height: 30vh;
+  }
+  .logo{
+    width: 8vw;
+  } 
+  .link{
+    font-size: 2vw;
+  }
+  .contact{
+    font-size: 2vw;
+  }
+  .contactField{
+    width: 20vw;
+    height: 6vw;
+    justify-content: space-between;
+  }
+  .fieldText{
+    font-size: 2vw;
+  }
+}
